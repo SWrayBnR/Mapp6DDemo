@@ -1,0 +1,36 @@
+VAR
+	gComm6D_IN : Mc6DControllerFBIOType; (*Communication var Input*)
+	gComm6D_OUT : Mc6DControllerFBIOType; (*Communication var Output*)
+END_VAR
+(*CONSTANTS*)
+VAR CONSTANT
+	XY_MAX : REAL := 0.240;
+	XY_MIN : REAL := 0.060;
+	SEG_CENTER : REAL := 0.120;
+	HALF_SHUTTLE : REAL := 0.06;
+	MAX_INDEX_SHUTTLE : USINT := 4; (*Maximum index for a shuttles on the system (50 Shuttles)*)
+	NR_OF_SEGMENTS : USINT := 9; (*10(0..9)*)
+	MAX_NUM_SHUTTLES : USINT := 4; (*4 [0..3]*)
+	NUM_SHUTTLES : USINT := 4; (*4[0.34]*)
+	C_DISABLE : BOOL := FALSE;
+	C_ENABLE : BOOL := TRUE;
+	C_HIDE : BOOL := FALSE;
+	C_SHOW : BOOL := TRUE;
+END_VAR
+(*Global Control Variable*)
+VAR
+	gMain : Main_typ; (*Global control variable*)
+END_VAR
+VAR RETAIN
+	gSettings : SysSettings_typ;
+END_VAR
+VAR
+	gShuttleReference : ARRAY[0..MAX_INDEX_SHUTTLE] OF ShuttleReferenceArray_typ; (*Global shuttle reference array*)
+	gSegments : ARRAY[0..NR_OF_SEGMENTS] OF MotorSegments_typ;
+	gShowMotorSegments : STRING[2000];
+	gVisShuttle : ShStatus_typ;
+	gShuttleStartupInfo : ARRAY[0..MAX_NUM_SHUTTLES] OF ShuttleStartup_typ;
+	gCreateDemo : BOOL;
+	gAssemblyY_max : REAL;
+	gAssemblyX_max : REAL;
+END_VAR

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_configPage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMI:showShuttles" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="Paper2" attribute="transform" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gSettings.DemoType" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
+		<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Jog.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="inputWaitTime3" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShuttlesPresent" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="NumericOutput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxCPUTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="OnlineChartHDA1" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxMotorTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="OnlineChartHDA4" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.Power" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="OnlineChartHDA2" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxAmplifierTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="OnlineChartHDA3" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.Power" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="NumericOutput5" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxAmplifierTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="NumericOutput6" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxCPUTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="NumericOutput4" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:MC_BR_AsmGetInfo_Acp6D_0.AssemblyInfo.MaxMotorTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_configPage" widgetRefId="NumericOutput7" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

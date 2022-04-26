@@ -1,0 +1,63 @@
+VAR
+	MainStep : MainStep_enum; (*Variable for the state machine*)
+END_VAR
+(*Function Blocks*)
+VAR
+	MC_BR_AsmReadStatus_Acp6D_0 : MC_BR_AsmReadStatus_Acp6D;
+	MC_BR_AsmReadInfo_Acp6D_0 : MC_BR_AsmReadInfo_Acp6D;
+	MC_BR_AsmPowerOn_Acp6D_0 : MC_BR_AsmPowerOn_Acp6D;
+	MC_BR_AsmPowerOff_Acp6D_0 : MC_BR_AsmPowerOff_Acp6D;
+	MC_BR_AsmGetShuttle_Acp6D_0 : MC_BR_AsmGetShuttle_Acp6D;
+	MC_BR_AsmStop_Acp6D_0 : MC_BR_AsmStop_Acp6D;
+	MC_BR_MoveInPlane_Acp6D_0 : MC_BR_MoveInPlane_Acp6D;
+	MTLookUpTable_0 : MTLookUpTable;
+	MC_BR_ShLevitation_Acp6D_0 : MC_BR_ShLevitation_Acp6D;
+	MC_BR_MoveInPlaneAsync_Acp6D_0 : MC_BR_MoveInPlaneAsync_Acp6D;
+	MC_BR_ShGetPayload_Acp6D_0 : MC_BR_ShGetPayload_Acp6D;
+	MC_BR_ShReadInfo_Acp6D_0 : ARRAY[0..MAX_NUM_SHUTTLES] OF MC_BR_ShReadInfo_Acp6D;
+	MC_BR_ReadCyclicPosition_Acp6D_0 : ARRAY[0..MAX_NUM_SHUTTLES] OF MC_BR_ReadCyclicPosition_Acp6D;
+	MC_BR_ShStop_Acp6D_0 : MC_BR_ShStop_Acp6D;
+	MC_BR_MoveShortAxis_Acp6D_0 : MC_BR_MoveShortAxis_Acp6D;
+	MC_BR_Move6D_Acp6D_0 : MC_BR_Move6D_Acp6D;
+	MC_BR_MoveArc_Acp6D_0 : MC_BR_MoveArc_Acp6D;
+	MC_BR_ShRecover_Acp6D_0 : MC_BR_ShRecover_Acp6D;
+	MC_BR_ShHalt_Acp6D_0 : MC_BR_ShHalt_Acp6D;
+	TON_0 : TON;
+END_VAR
+(*Local Vars*)
+VAR
+	NextFreeIndex : USINT; (*Next free index in the global shuttle array*)
+	TareWeight : ARRAY[0..3] OF REAL;
+	YawLimit : REAL;
+	zHeight : ARRAY[0..49] OF REAL;
+	zRollLimit : ARRAY[0..49] OF REAL;
+END_VAR
+(*Visualisation status/visability links*)
+VAR
+	visuLandText : STRING[80];
+	visStatusText : STRING[80];
+	visPowerImage : STRING[80];
+	visResetSelected : BOOL;
+	visSelectedTab : UINT;
+END_VAR
+(*State machine states*)
+VAR
+	stateWeigh : UDINT;
+	statePMT : UDINT;
+END_VAR
+(*Counters*)
+VAR
+	i : USINT;
+	j : USINT;
+	k : UINT;
+	statusCount : USINT;
+	MC_BR_AsmGetInfo_Acp6D_0 : MC_BR_AsmGetInfo_Acp6D;
+	visShowReset : BOOL;
+	ErrorStep : MainStep_enum;
+	ErrorNumber : DINT;
+	AverageWeightShtSum : ARRAY[0..3] OF REAL;
+	AverageWeightShtl : ARRAY[0..3,0..499] OF REAL;
+	AverageWeightShtlSum : ARRAY[0..3] OF REAL;
+	l : UINT;
+	m : UINT;
+END_VAR

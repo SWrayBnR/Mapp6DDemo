@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="DialogsPackage" PackageType="DialogsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="AreaContents">AreaContents</Object>
+    <Object Type="Package">workStations</Object>
+    <Object Type="Package">inputStations</Object>
+    <Object Type="Package">outputStations</Object>
+    <Object Type="Package">settingDialog</Object>
+    <Object Type="Package">shuttleDialog</Object>
+    <Object Type="Package">Recipe</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,68 @@
+VAR
+	DemoMacro : ARRAY[0..99] OF Macro_typ;
+	gMacro : ARRAY[0..99] OF Macro_typ;
+	MC_BR_MoveInPlaneAsync_Acp6D_0 : MC_BR_MoveInPlaneAsync_Acp6D;
+	MC_BR_Move6D_Acp6D_0 : MC_BR_Move6D_Acp6D;
+	MC_BR_MoveArc_Acp6D_0 : MC_BR_MoveArc_Acp6D;
+	MC_BR_AsmPowerOn_Acp6D_0 : MC_BR_AsmPowerOn_Acp6D;
+	MC_BR_MacroCreate_Acp6D_0 : MC_BR_MacroCreate_Acp6D;
+	MC_BR_MoveInPlane_Acp6D_0 : MC_BR_MoveInPlane_Acp6D;
+	MC_BR_AsmReadStatus_0 : MC_BR_AsmReadStatus_Acp6D;
+	MC_BR_MacroSave_0 : MC_BR_MacroSave_Acp6D;
+	MC_BR_MacroClear_0 : MC_BR_MacroClear_Acp6D;
+	MC_BR_MacroDelete_0 : MC_BR_MacroDelete_Acp6D;
+	MC_BR_MacroRun_0 : MC_BR_MacroRun_Acp6D;
+	MC_BR_AsmGetShuttle_0 : MC_BR_AsmGetShuttle_Acp6D;
+END_VAR
+VAR CONSTANT
+	MAX_NUM_SH : USINT := 10;
+	C_MOVE_IN_PLANE_010 : USINT := 10;
+	C_MOVE_IN_PLANE_ASYNC_015 : USINT := 15;
+	C_MOVE_IN_6D_PLANE_020 : USINT := 20;
+	C_MOVE_ARC_025 : USINT := 25;
+	C_NEXT_COMMAND_05 : USINT := 5;
+END_VAR
+VAR
+	Cmd : Ctrl_typ;
+	i : USINT;
+	inc : USINT;
+	MacroState : USINT;
+	visMacroStatus : STRING[80];
+	MacroSh : {REDUND_UNREPLICABLE} ARRAY[0..9] OF Mc6DShuttleType;
+	TempName : STRING[33];
+	ExistingMacroNames : ARRAY[0..19] OF STRING[28];
+	MacroName : STRING[28];
+	helpStr : STRING[28];
+	int_to_str : STRING[4];
+	ShRefArr : ARRAY[0..MAX_NUM_SH] OF Mc6DShuttleType;
+	macroLine : UDINT;
+	command : UINT;
+	Clear : BOOL;
+	ReRun : BOOL;
+	RunMacro : BOOL;
+	CenterSegX : REAL;
+	CenterSegY : REAL;
+	SecondPosY : REAL;
+	SecondPosX : REAL;
+	FirstPosY : REAL;
+	FirstPosX : REAL;
+	visLockRun : BOOL;
+	PathCW : McAcp6DInPlanePathEnum;
+	PathACW : McAcp6DInPlanePathEnum;
+END_VAR
+VAR CONSTANT
+	C_WAIT_00 : USINT := 0;
+	C_READ_STATUS_01 : USINT := 1;
+	C_POWER_ON_02 : USINT := 2;
+	C_CREATE_03 : USINT := 3;
+	C_DELETE_04 : USINT := 4;
+	C_SAVE_60 : USINT := 60;
+	C_REMAKE_DEMO_MACRO_70 : USINT := 70;
+	C_RUN_DEMO_MACRO_80 : USINT := 80;
+	C_RUN_DEMO_MACRO_81 : USINT := 81;
+	C_RUN_DEMO_MACRO_82 : USINT := 82;
+	C_RUN_DEMO_MACRO_83 : USINT := 83;
+	C_RE_RUN_85 : USINT := 85;
+	C_CLEARMACRO_90 : USINT := 90;
+	C_RESET_100 : USINT := 100;
+END_VAR

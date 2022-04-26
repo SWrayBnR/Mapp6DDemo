@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_outputStations" height="800" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="0" left="0" width="600" height="90" zIndex="0" text="Output Station" textAlign="center bottom" fontSize="45px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="120" left="30" width="180" zIndex="1" text="Status" textAlign="left" fontSize="30px" bold="true" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="2" x1="30" x2="570" y1="90" y2="90" lineWidth="3px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="360" left="30" width="180" zIndex="3" text="Settings" textAlign="left" fontSize="30px" bold="true" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="outputCounter" top="180" left="420" zIndex="4" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="outputWaitTime" top="420" left="420" zIndex="5" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':3,'minimumIntegerDigits':1}}" maxValue="5000" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TotalOutputRate" top="240" left="420" zIndex="6" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="180" left="60" width="180" zIndex="7" text="Counter" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="240" left="60" width="330" zIndex="8" text="Total output rate" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TotalOutputCycleTime" top="300" left="420" zIndex="9" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.Label" id="Label9" top="300" left="60" width="330" zIndex="10" text="Total output cycle time" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="420" left="60" width="330" zIndex="11" text="Output wait time" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="180" left="510" width="180" zIndex="12" text="Sh" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="240" left="510" width="180" zIndex="13" text="Sh/min" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label8" top="300" left="510" width="180" zIndex="14" text="s" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label11" top="420" left="510" width="180" zIndex="15" text="s" textAlign="left" fontSize="20px" bold="true" />
+  </Widgets>
+</Content>

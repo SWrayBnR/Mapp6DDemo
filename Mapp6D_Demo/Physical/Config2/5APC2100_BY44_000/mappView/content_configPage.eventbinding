@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="content_configPage_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="content_MainPage.Paper2.Click">
+      <Source xsi:type="widgets.brease.Paper.Event" contentRefId="content_configPage" widgetRefId="Paper2" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="workStationSelector">
+                <Method xsi:type="session.VariableAction.SetValueNumber" value="999" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="choosenWorkStation">
+                <Method xsi:type="session.VariableAction.SetValueString" value="=elementId" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="stringOpen">
+      <Source xsi:type="session.Event" refId="workStationSelector" event="ValueChanged" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="choosenWorkStation">
+                <Method xsi:type="session.VariableAction.SetValueString" value="999" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="dialog_workStations" horizontalPos="center" verticalPos="middle" autoClose="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="stringConverter">
+      <Source xsi:type="session.Event" refId="choosenWorkStation" event="ValueChanged" />
+      <EventHandler condition="newValue=&quot;#wsc1&quot; OR newValue=&quot;#c1&quot; ">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc2&quot; OR newValue=&quot;#c2&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc3&quot; OR newValue=&quot;#c3&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc4&quot; OR newValue=&quot;#c4&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="3" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc5&quot; OR newValue=&quot;#c5&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc6&quot; OR newValue=&quot;#c6&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="5" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc7&quot; OR newValue=&quot;#c7&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="6" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc8&quot; OR newValue=&quot;#c8&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="7" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc9&quot; OR newValue=&quot;#c9&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="8" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#wsc10&quot; OR newValue=&quot;#c10&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="workStationSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="9" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_configPage.Paper2.Click">
+      <Source xsi:type="widgets.brease.Paper.Event" contentRefId="content_configPage" widgetRefId="Paper2" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+                <Method xsi:type="session.VariableAction.SetValueNumber" value="999" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="choosenShuttle">
+                <Method xsi:type="session.VariableAction.SetValueString" value="=elementId" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="stringConverterShuttleView">
+      <Source xsi:type="session.Event" refId="choosenShuttle" event="ValueChanged" />
+      <EventHandler condition="newValue=&quot;#rect1&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect2&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect3&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect4&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="3" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect5&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect6&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="5" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect7&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="6" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect8&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="7" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect9&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="8" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect10&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="9" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect11&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="10" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect12&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="11" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect13&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="12" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect14&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="13" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=&quot;#rect15&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="shuttleSelector">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="14" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ShuttleStringOpen">
+      <Source xsi:type="session.Event" refId="shuttleSelector" event="ValueChanged" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="choosenShuttle">
+                <Method xsi:type="session.VariableAction.SetValueString" value="999" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="dialog_shuttle" horizontalPos="center" verticalPos="middle" autoClose="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+	</Bindings>
+</EventBindingSet>

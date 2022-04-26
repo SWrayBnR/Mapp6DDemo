@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_Recipe" height="800" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ListBox" id="ListBox1" top="120" left="210" width="360" height="210" zIndex="0" dataProvider="[{'value':'Preset 1','text':'Preset 1'},{'value':'Preset 2','text':'Preset 2'},{'value':'Preset 3','text':'Preset 3'},{'value':'Preset 4','text':'Preset 4'},{'value':'Preset 5','text':'Preset 5'}]" selectedValue="Preset 1" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="0" left="0" width="600" height="90" zIndex="1" value="Configs" textAlign="center" fontSize="45px" bold="true" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="2" x1="30" x2="570" y1="70" y2="70" lineWidth="3px" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton10" top="120" left="30" width="150" height="50" zIndex="3" text="Save Recipe" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton9" top="180" left="30" width="150" height="50" zIndex="4" text="Load Recipe" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" />
+  </Widgets>
+</Content>

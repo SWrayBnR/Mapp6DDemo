@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_shuttleDialog_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="shuttleSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="node">
+					<bt:Element index="0" refId="::AsGlobalPV:shuttleStartupInfo[0].initXPos" />
+					<bt:Element index="1" refId="::AsGlobalPV:shuttleStartupInfo[1].initXPos" />
+					<bt:Element index="2" refId="::AsGlobalPV:shuttleStartupInfo[2].initXPos" />
+					<bt:Element index="3" refId="::AsGlobalPV:shuttleStartupInfo[3].initXPos" />
+					<bt:Element index="4" refId="::AsGlobalPV:shuttleStartupInfo[4].initXPos" />
+					<bt:Element index="5" refId="::AsGlobalPV:shuttleStartupInfo[5].initXPos" />
+					<bt:Element index="6" refId="::AsGlobalPV:shuttleStartupInfo[6].initXPos" />
+					<bt:Element index="7" refId="::AsGlobalPV:shuttleStartupInfo[7].initXPos" />
+					<bt:Element index="8" refId="::AsGlobalPV:shuttleStartupInfo[8].initXPos" />
+					<bt:Element index="9" refId="::AsGlobalPV:shuttleStartupInfo[9].initXPos" />
+					<bt:Element index="10" refId="::AsGlobalPV:shuttleStartupInfo[10].initXPos" />
+					<bt:Element index="11" refId="::AsGlobalPV:shuttleStartupInfo[11].initXPos" />
+					<bt:Element index="12" refId="::AsGlobalPV:shuttleStartupInfo[12].initXPos" />
+					<bt:Element index="13" refId="::AsGlobalPV:shuttleStartupInfo[13].initXPos" />
+					<bt:Element index="14" refId="::AsGlobalPV:shuttleStartupInfo[14].initXPos" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_shuttleDialog" widgetRefId="NumericInput_StartXPos" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="shuttleSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="node">
+					<bt:Element index="0" refId="::AsGlobalPV:shuttleStartupInfo[0].initYPos" />
+					<bt:Element index="1" refId="::AsGlobalPV:shuttleStartupInfo[1].initYPos" />
+					<bt:Element index="2" refId="::AsGlobalPV:shuttleStartupInfo[2].initYPos" />
+					<bt:Element index="3" refId="::AsGlobalPV:shuttleStartupInfo[3].initYPos" />
+					<bt:Element index="4" refId="::AsGlobalPV:shuttleStartupInfo[4].initYPos" />
+					<bt:Element index="5" refId="::AsGlobalPV:shuttleStartupInfo[5].initYPos" />
+					<bt:Element index="6" refId="::AsGlobalPV:shuttleStartupInfo[6].initYPos" />
+					<bt:Element index="7" refId="::AsGlobalPV:shuttleStartupInfo[7].initYPos" />
+					<bt:Element index="8" refId="::AsGlobalPV:shuttleStartupInfo[8].initYPos" />
+					<bt:Element index="9" refId="::AsGlobalPV:shuttleStartupInfo[9].initYPos" />
+					<bt:Element index="10" refId="::AsGlobalPV:shuttleStartupInfo[10].initYPos" />
+					<bt:Element index="11" refId="::AsGlobalPV:shuttleStartupInfo[11].initYPos" />
+					<bt:Element index="12" refId="::AsGlobalPV:shuttleStartupInfo[12].initYPos" />
+					<bt:Element index="13" refId="::AsGlobalPV:shuttleStartupInfo[13].initYPos" />
+					<bt:Element index="14" refId="::AsGlobalPV:shuttleStartupInfo[14].initYPos" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_shuttleDialog" widgetRefId="NumericInput_StartYPos" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="shuttleSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:shuttleStartupInfo[0].nextStationSelector" />
+					<bt:Element index="1" refId="::AsGlobalPV:shuttleStartupInfo[1].nextStationSelector" />
+					<bt:Element index="2" refId="::AsGlobalPV:shuttleStartupInfo[2].nextStationSelector" />
+					<bt:Element index="3" refId="::AsGlobalPV:shuttleStartupInfo[3].nextStationSelector" />
+					<bt:Element index="4" refId="::AsGlobalPV:shuttleStartupInfo[4].nextStationSelector" />
+					<bt:Element index="5" refId="::AsGlobalPV:shuttleStartupInfo[5].nextStationSelector" />
+					<bt:Element index="6" refId="::AsGlobalPV:shuttleStartupInfo[6].nextStationSelector" />
+					<bt:Element index="7" refId="::AsGlobalPV:shuttleStartupInfo[7].nextStationSelector" />
+					<bt:Element index="8" refId="::AsGlobalPV:shuttleStartupInfo[8].nextStationSelector" />
+					<bt:Element index="9" refId="::AsGlobalPV:shuttleStartupInfo[9].nextStationSelector" />
+					<bt:Element index="10" refId="::AsGlobalPV:shuttleStartupInfo[10].nextStationSelector" />
+					<bt:Element index="11" refId="::AsGlobalPV:shuttleStartupInfo[11].nextStationSelector" />
+					<bt:Element index="12" refId="::AsGlobalPV:shuttleStartupInfo[12].nextStationSelector" />
+					<bt:Element index="13" refId="::AsGlobalPV:shuttleStartupInfo[13].nextStationSelector" />
+					<bt:Element index="14" refId="::AsGlobalPV:shuttleStartupInfo[14].nextStationSelector" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_shuttleDialog" widgetRefId="nextStationSelector" attribute="selectedValue" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

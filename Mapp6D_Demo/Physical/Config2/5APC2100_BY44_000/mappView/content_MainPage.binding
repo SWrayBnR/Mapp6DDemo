@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_MainPage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMI:showShuttles" attribute="value" samplingRate="fast" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Paper2" attribute="transform" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Right" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Left" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Neg" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Pos" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RzP" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RzN" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RyP" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RyN" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RxP" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.RxN" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Up" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Down" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton11" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMI:showShuttlesPosRy" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Paper3" attribute="transform" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMI:showShuttlesPosRx" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Paper1" attribute="transform" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Jog.Zero" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton13" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Land" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton14" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visuLandText" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton14" attribute="image" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Rx" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Y" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Z" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Ry" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput6" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Weigh" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton15" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.SelectedShuttleID" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput8" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.X" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visStatusText" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="TextOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.AsmPlcOpenState" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="ImageList1" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMI:TESTString" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Paper2" attribute="svgContent" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.ShortAxis.Position.Z" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.InPlane.Position.Y" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.InPlane.Position.X" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.ShortAxis.Position.Rx" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.ShortAxis.Position.Ry" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Move6D.ShortAxis.Position.Rz" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Arc" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Move6D" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Arc.Angular.Center.Y" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Arc.Angular.Center.X" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Arc.Angular.Angle" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericInput11" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput11" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput13" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Label13" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput7" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Label23" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput12" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput11" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Label21" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput13" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="Label28" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph4" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph3" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.ShtPresent[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Weight[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="OnlineChartGraph1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visSelectedTab" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="TabControl1" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Z" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput16" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Ry" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput18" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Rx" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput17" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Rz" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput19" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Rz" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.Y" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput15" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.SelectedShuttleID" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.SelectedShuttleID" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Accel" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="BasicSlider3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.Accel" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="BasicSlider4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Par.EndVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="BasicSlider5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Status.Position.X" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="NumericOutput14" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Tare" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="MomentaryPushButton16" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Stop" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.ResetAll" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visResetSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton5" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.Stop" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.ResetAll" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visResetSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton6" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visResetSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton7" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.ResetAll" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.ResetAll" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainCtrl:visResetSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton10" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.Cmd.StopAll" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Macro:RunMacro" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Macro:visMacroStatus" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="TextOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Macro:MacroName" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="TextOutput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Macro:ReRun" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="CheckBox1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Macro:visLockRun" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_MainPage" widgetRefId="PushButton8" attribute="visible" />
+</Binding>
+</Bindings>
+</BindingsSet>

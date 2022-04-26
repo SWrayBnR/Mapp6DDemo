@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_settings_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gAcp6DCtrl.Par.Velocity" attribute="value" />
+			<Target xsi:type="brease" contentRefId="content_settings" widgetRefId="inputWaitTime1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gAcp6DCtrl.Par.Acceleration" attribute="value" />
+			<Target xsi:type="brease" contentRefId="content_settings" widgetRefId="inputWaitTime2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::workStatio:nrOfStationsHMI" attribute="value" />
+			<Target xsi:type="brease" contentRefId="content_settings" widgetRefId="inputWaitTime4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMain.par.itemsPrShuttle" attribute="value" />
+			<Target xsi:type="brease" contentRefId="content_settings" widgetRefId="inputWaitTime3" attribute="value" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

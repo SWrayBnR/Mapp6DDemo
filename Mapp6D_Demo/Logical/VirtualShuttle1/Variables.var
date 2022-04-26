@@ -1,0 +1,20 @@
+VAR
+	MC_BR_ShGroupCreate_0 : MC_BR_ShGroupCreate_Acp6D;
+	MC_BR_AsmPowerOn_Acp6D_0 : MC_BR_AsmPowerOn_Acp6D;
+	MC_BR_AsmReadStatus_0 : MC_BR_AsmReadStatus_Acp6D;
+	Cmd : Ctrl_typ;
+	VirtualShState : USINT;
+	VirtualShRef : Mc6DShuttleGroupType;
+	MC_BR_ShGroupAddShuttle_0 : MC_BR_ShGroupAddShuttle_Acp6D;
+	MC_BR_AsmGetShuttle_0 : MC_BR_AsmGetShuttle_Acp6D;
+	VirtualShRefArr : ARRAY[0..MAX_NUM_SH] OF Mc6DShuttleType;
+END_VAR
+VAR CONSTANT
+	MAX_NUM_SH : USINT := 10;
+END_VAR
+VAR
+	i : USINT;
+	MC_BR_AsmGetVirtualSh_0 : MC_BR_AsmGetVirtualSh_Acp6D;
+	MC_BR_VirtualShCreate_0 : MC_BR_VirtualShCreate_Acp6D;
+	MC_BR_MoveInPlane_0 : MC_BR_MoveInPlane_Acp6D;
+END_VAR

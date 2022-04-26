@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="7" ArVersion="D4.83">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="degree Celsius" Symbol="°C" />
+      <EngineeringUnit Id="2" UnitId="5723220" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="watt" Symbol="W" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gAssembly6D_1" />
+        <Variable Name="gComm6D_IN" />
+        <Variable Name="gComm6D_OUT" />
+        <Variable Name="gMain">
+          <Variable Name="Cmd">
+            <Variable Name="Power" />
+            <Variable Name="Start" />
+            <Variable Name="StopAll" />
+            <Variable Name="ErrorReset" />
+            <Variable Name="Jog">
+              <Variable Name="Right" />
+              <Variable Name="Left" />
+              <Variable Name="Neg" />
+              <Variable Name="Pos" />
+              <Variable Name="ShuttleID" />
+              <Variable Name="Distance" />
+              <Variable Name="Degrees" />
+              <Variable Name="ShortDistance" />
+              <Variable Name="RyN" />
+              <Variable Name="RyP" />
+              <Variable Name="RxP" />
+              <Variable Name="RxN" />
+              <Variable Name="RzN" />
+              <Variable Name="RzP" />
+              <Variable Name="Down" />
+              <Variable Name="Up" />
+              <Variable Name="Zero" />
+            </Variable>
+            <Variable Name="Land" />
+            <Variable Name="Weigh" />
+            <Variable Name="Move6D" />
+            <Variable Name="Group" />
+            <Variable Name="Arc" />
+            <Variable Name="Tare" />
+            <Variable Name="Pause" />
+            <Variable Name="Resume" />
+            <Variable Name="Stop" />
+            <Variable Name="ResetAll" />
+          </Variable>
+          <Variable Name="Par">
+            <Variable Name="SelectedIndex" />
+            <Variable Name="InPlane">
+              <Variable Name="Position">
+                <Variable Name="X" />
+                <Variable Name="Y" />
+              </Variable>
+              <Variable Name="Velocity" />
+              <Variable Name="EndVelocity" />
+              <Variable Name="Acceleration" />
+              <Variable Name="Mode" />
+              <Variable Name="Path" />
+            </Variable>
+            <Variable Name="JogShort">
+              <Variable Name="Position">
+                <Variable Name="Z" />
+                <Variable Name="Rx" />
+                <Variable Name="Ry" />
+                <Variable Name="Rz" />
+              </Variable>
+              <Variable Name="Velocity">
+                <Variable Name="Z" />
+                <Variable Name="Rx" />
+                <Variable Name="Ry" />
+                <Variable Name="Rz" />
+              </Variable>
+              <Variable Name="Mode" />
+              <Variable Name="Rotation">
+                <Variable Name="Type" />
+                <Variable Name="Center">
+                  <Variable Name="X" />
+                  <Variable Name="Y" />
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="Jog">
+              <Variable Name="Position">
+                <Variable Name="X" />
+                <Variable Name="Y" />
+              </Variable>
+              <Variable Name="Velocity" />
+              <Variable Name="EndVelocity" />
+              <Variable Name="Acceleration" />
+              <Variable Name="Mode" />
+              <Variable Name="Path" />
+            </Variable>
+            <Variable Name="ShortAxis">
+              <Variable Name="Position">
+                <Variable Name="Z" />
+                <Variable Name="Rx" />
+                <Variable Name="Ry" />
+                <Variable Name="Rz" />
+              </Variable>
+              <Variable Name="Velocity">
+                <Variable Name="Z" />
+                <Variable Name="Rx" />
+                <Variable Name="Ry" />
+                <Variable Name="Rz" />
+              </Variable>
+            </Variable>
+            <Variable Name="Arc">
+              <Variable Name="Direction" />
+              <Variable Name="Velocity" />
+              <Variable Name="EndVelocity" />
+              <Variable Name="Acceleration" />
+              <Variable Name="Mode" />
+              <Variable Name="Option" />
+              <Variable Name="Angular">
+                <Variable Name="Center">
+                  <Variable Name="X" />
+                  <Variable Name="Y" />
+                </Variable>
+                <Variable Name="Angle" />
+              </Variable>
+              <Variable Name="Radius">
+                <Variable Name="Position">
+                  <Variable Name="X" />
+                  <Variable Name="Y" />
+                </Variable>
+                <Variable Name="Radius" />
+                <Variable Name="ArcType" />
+              </Variable>
+            </Variable>
+            <Variable Name="Move6D">
+              <Variable Name="InPlane">
+                <Variable Name="Position">
+                  <Variable Name="X" />
+                  <Variable Name="Y" />
+                </Variable>
+                <Variable Name="Velocity" />
+                <Variable Name="Acceleration" />
+              </Variable>
+              <Variable Name="ShortAxis">
+                <Variable Name="Position">
+                  <Variable Name="Z" />
+                  <Variable Name="Rx" />
+                  <Variable Name="Ry" />
+                  <Variable Name="Rz" />
+                </Variable>
+                <Variable Name="Velocity">
+                  <Variable Name="Z" />
+                  <Variable Name="Rx" />
+                  <Variable Name="Ry" />
+                  <Variable Name="Rz" />
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="ShrtVel" />
+            <Variable Name="Accel" />
+            <Variable Name="Velocity" />
+            <Variable Name="EndVelocity" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="SelectedShuttleID" />
+            <Variable Name="AsmPlcOpenState" />
+            <Variable Name="ControllerState" />
+            <Variable Name="Disabled" />
+            <Variable Name="Ready" />
+            <Variable Name="Homing" />
+            <Variable Name="Stopping" />
+            <Variable Name="StartUp" />
+            <Variable Name="ErrorStop" />
+            <Variable Name="ShuttlesPresent" />
+            <Variable Name="Position">
+              <Variable Name="X" />
+              <Variable Name="Y" />
+              <Variable Name="Z" />
+              <Variable Name="Rx" />
+              <Variable Name="Ry" />
+              <Variable Name="Rz" />
+            </Variable>
+            <Variable Name="Weight" EnableArrayElements="True" />
+            <Variable Name="ShtPresent" EnableArrayElements="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="gSegments" />
+        <Variable Name="gShowMotorSegments" />
+        <Variable Name="gShuttleReference" />
+        <Variable Name="gShuttleStartupInfo" />
+        <Variable Name="gVisShuttle">
+          <Variable Name="ShuttleInfo" EnableArrayElements="True" />
+          <Variable Name="ShuttleInfoVis" EnableArrayElements="True" />
+        </Variable>
+        <Variable Name="MAX_INDEX_SHUTTLE" />
+        <Variable Name="MAX_NUM_SHUTTLES" />
+        <Variable Name="NR_OF_SEGMENTS" />
+        <Variable Name="NUM_SHUTTLES" />
+        <Variable Name="gSettings">
+          <Variable Name="DemoType" />
+        </Variable>
+      </GlobalVariables>
+      <Task Name="MainCtrl">
+        <Variable Name="visuLandText" />
+        <Variable Name="MC_BR_AsmGetShuttle_Acp6D_0">
+          <Variable Name="TotalCount" />
+        </Variable>
+        <Variable Name="visStatusText" />
+        <Variable Name="visPowerImage" />
+        <Variable Name="visSelectedTab" />
+        <Variable Name="visResetSelected" />
+        <Variable Name="visShowReset" />
+        <Variable Name="MC_BR_AsmGetInfo_Acp6D_0">
+          <Variable Name="AssemblyInfo">
+            <Variable Name="NumberOfShuttles" Historizing="True" HistoryBufferSize="200" />
+            <Variable Name="Power" Historizing="True" HistoryBufferSize="200" EngineeringUnitId="2" />
+            <Variable Name="MaxCPUTemp" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" EngineeringUnitId="1" />
+            <Variable Name="MaxAmplifierTemp" Historizing="True" HistoryBufferSize="200" EngineeringUnitId="1" />
+            <Variable Name="MaxMotorTemp" Historizing="True" HistoryBufferSize="200" EngineeringUnitId="1" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="HMI">
+        <Variable Name="pSegments">
+          <Variable Name="visible" />
+          <Variable Name="ID" />
+        </Variable>
+        <Variable Name="pShuttleInfo">
+          <Variable Name="ID" />
+          <Variable Name="State" />
+          <Variable Name="Force">
+            <Variable Name="Fx" />
+            <Variable Name="Fy" />
+            <Variable Name="Fz" />
+            <Variable Name="Tx" />
+            <Variable Name="Ty" />
+            <Variable Name="Tz" />
+          </Variable>
+          <Variable Name="Position">
+            <Variable Name="X" />
+            <Variable Name="Y" />
+            <Variable Name="Z" />
+            <Variable Name="Rx" />
+            <Variable Name="Ry" />
+            <Variable Name="Rz" />
+          </Variable>
+          <Variable Name="inUse" />
+        </Variable>
+        <Variable Name="pShuttleStartupInfo">
+          <Variable Name="initYPos" />
+          <Variable Name="initXPos" />
+          <Variable Name="nextStationSelector" />
+        </Variable>
+        <Variable Name="showConfigShuttles" />
+        <Variable Name="showConfigSvg" />
+        <Variable Name="showConfigSvgCmd" />
+        <Variable Name="showShuttles" MinimumSamplingInterval="Timer1" />
+        <Variable Name="showTyleSvg" />
+        <Variable Name="showTyleSvgCmd" />
+        <Variable Name="tmpString" />
+        <Variable Name="this">
+          <Variable Name="workStationList" />
+          <Variable Name="tableConfigClick" />
+          <Variable Name="tableConfigString" />
+          <Variable Name="tableConfigID" />
+        </Variable>
+        <Variable Name="tmpCalc" />
+        <Variable Name="xCordinate" />
+        <Variable Name="yCordinate" />
+        <Variable Name="resetMotorSegmentLayoutCmd" />
+        <Variable Name="resetShuttleInitLayoutCmd" />
+        <Variable Name="shuttleStartPosSvg" />
+        <Variable Name="shuttleStartPosSvgCmd" />
+        <Variable Name="sizeOfArray" />
+        <Variable Name="demoMotorSegmentLayoutCmd" />
+        <Variable Name="i" />
+        <Variable Name="init" />
+        <Variable Name="j" />
+        <Variable Name="nrOfShuttlesHMI" />
+        <Variable Name="visSelectedShuttle" />
+        <Variable Name="showShuttlesPosRx" MinimumSamplingInterval="Timer1" />
+        <Variable Name="showShuttlesPosRy" MinimumSamplingInterval="Timer1" />
+        <Variable Name="TESTString" MinimumSamplingInterval="Timer1" />
+      </Task>
+      <Task Name="Macro">
+        <Variable Name="RunMacro" />
+        <Variable Name="ReRun" />
+        <Variable Name="visMacroStatus" />
+        <Variable Name="ExistingMacroNames" EnableArrayElements="True" />
+        <Variable Name="MacroName" />
+        <Variable Name="visLockRun" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

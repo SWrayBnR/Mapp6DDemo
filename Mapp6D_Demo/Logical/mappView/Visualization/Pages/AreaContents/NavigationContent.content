@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_Navigation" height="840" width="120" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton1" top="396" left="21" width="80" height="80" zIndex="0" image="Media/Buttons/playButton.svg" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 255, 255, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton9" top="303" left="21" width="80" height="80" zIndex="1" image="Media/Buttons/pause.svg" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 255, 255, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="746" left="19" width="80" height="80" zIndex="2" image="Media/Buttons/Home.svg" pageId="page_MainPage" imageHeight="50" imageWidth="50" cornerRadius="9px" borderColor="rgba(91, 124, 112, 0)" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton3" top="655" left="19" width="80" height="80" zIndex="3" image="Media/Buttons/settingsButton.png" pageId="page_configPage" imageHeight="70" imageWidth="70" cornerRadius="9px" borderColor="rgba(91, 124, 112, 0)" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton2" top="115" left="19" width="80" height="80" zIndex="4" image="Media/Buttons/Reset.svg" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton3" top="210" left="21" width="80" height="80" zIndex="5" image="Media/Buttons/stop.svg" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 255, 255, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton4" top="20" left="19" width="80" height="80" zIndex="6" image="Media/Power.png" imageHeight="50" imageWidth="50" cornerRadius="10px" backColor="rgba(224, 224, 224, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 0, 0, 1)" textAlign="center" />
+  </Widgets>
+</Content>

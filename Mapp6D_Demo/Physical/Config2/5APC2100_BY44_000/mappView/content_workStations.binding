@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_workStations_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="node">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.xLocation" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.xLocation" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.xLocation" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.xLocation" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.xLocation" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.xLocation" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.xLocation" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.xLocation" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.xLocation" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.xLocation" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="xLocation" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="node">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.yLocation" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.yLocation" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.yLocation" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.yLocation" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.yLocation" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.yLocation" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.yLocation" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.yLocation" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.yLocation" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.yLocation" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="yLocation" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.processTime" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.processTime" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.processTime" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.processTime" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.processTime" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.processTime" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.processTime" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.processTime" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.processTime" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.processTime" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="processTime" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.landBeforeProcess" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.landBeforeProcess" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.landBeforeProcess" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.landBeforeProcess" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.landBeforeProcess" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.landBeforeProcess" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.landBeforeProcess" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.landBeforeProcess" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.landBeforeProcess" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.landBeforeProcess" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="Leviate" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.typeOfStation" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.typeOfStation" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.typeOfStation" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.typeOfStation" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.typeOfStation" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.typeOfStation" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.typeOfStation" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.typeOfStation" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.typeOfStation" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.typeOfStation" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="stationType" attribute="selectedIndex" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.nextStationSelector" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.nextStationSelector" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.nextStationSelector" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.nextStationSelector" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.nextStationSelector" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.nextStationSelector" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.nextStationSelector" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.nextStationSelector" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.nextStationSelector" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.nextStationSelector" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="nextStationSelector" attribute="selectedValue" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].status.componentName" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].status.componentName" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].status.componentName" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].status.componentName" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].status.componentName" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].status.componentName" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].status.componentName" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].status.componentName" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].status.componentName" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].status.componentName" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="componentName" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="workStationSelector" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:gWorkStations[0].par.pathRouting" />
+					<bt:Element index="1" refId="::AsGlobalPV:gWorkStations[1].par.pathRouting" />
+					<bt:Element index="2" refId="::AsGlobalPV:gWorkStations[2].par.pathRouting" />
+					<bt:Element index="3" refId="::AsGlobalPV:gWorkStations[3].par.pathRouting" />
+					<bt:Element index="4" refId="::AsGlobalPV:gWorkStations[4].par.pathRouting" />
+					<bt:Element index="5" refId="::AsGlobalPV:gWorkStations[5].par.pathRouting" />
+					<bt:Element index="6" refId="::AsGlobalPV:gWorkStations[6].par.pathRouting" />
+					<bt:Element index="7" refId="::AsGlobalPV:gWorkStations[7].par.pathRouting" />
+					<bt:Element index="8" refId="::AsGlobalPV:gWorkStations[8].par.pathRouting" />
+					<bt:Element index="9" refId="::AsGlobalPV:gWorkStations[9].par.pathRouting" />
+				</be:List>
+			</Source>
+			<Target xsi:type="brease" contentRefId="content_workStations" widgetRefId="PathRouting" attribute="selectedIndex" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

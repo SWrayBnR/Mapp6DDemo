@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.10.3.60 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="8YFLM01.0000.00I-1" Type="8YFLM01.0000.00I-1" Version="0.0.0.1">
+    <Connection Connector="PLK1" TargetModule="X20CP1685" TargetConnector="IF3" NodeNumber="50">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20CP1685" Type="X20CP1685" Version="1.4.0.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.10.7" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="ActivateSnmp" Value="2" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="CycleTime" Value="1000" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="mapp6d_SampleProject_Config1" />
+    <Parameter ID="UserPartitionSize" Value="10" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1685.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="1000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic3Duration" Value="52000" />
+    <Parameter ID="Cyclic3Tolerance" Value="52000" />
+    <Parameter ID="Cyclic5Duration" Value="198000" />
+    <Parameter ID="Cyclic5Tolerance" Value="198000" />
+    <Parameter ID="Cyclic7Duration" Value="1002000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1002000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="6DData" />
+    <Parameter ID="FileDevicePath1" Value="C:\6DData" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="admin" />
+    <Parameter ID="FtpUserPassword1" Value="dNmF8ZjP+LmBsEglWtmW9suMlO0FNzgHVeilX4YjqJw=" />
+    <Parameter ID="FtpUserSalt1" Value="G7mT75Ku" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
+  </Module>
+</Hardware>

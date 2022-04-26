@@ -1,0 +1,7 @@
+VAR
+	zoneState : UDINT;
+	MC_BR_ZoneCreate_Acp6D_0 : MC_BR_ZoneCreate_Acp6D;
+	ZonePars : McAcp6DCreateZoneParType;
+	MC_BR_ZonePowerOff_Acp6D_0 : MC_BR_ZonePowerOff_Acp6D;
+	MC_BR_AsmGetZone_Acp6D_0 : MC_BR_AsmGetZone_Acp6D;
+END_VAR

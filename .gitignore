@@ -1,0 +1,46 @@
+#################
+## B&R Automation Studio
+#################
+
+## Ignore Automation Studio temporary files, binary files results
+# For help, go here: https://git-scm.com/docs/gitignore
+
+# User-specific files
+#*.set 
+*.isopen.orig
+*.isopen
+
+# Build results
+Binaries/
+
+# Temp files
+Temp/
+
+# Diagnosis files
+*.PVM.dock
+*.PVM
+*.brk
+*.mdc
+*.tch
+
+# Don't ignore trace configuration files
+#*.tc
+
+*.td
+*.pc
+*.pd
+*.state
+
+
+# Zip files
+*.zip 
+# there are some in safety!
+
+#BusNavigator files
+*.bnc 
+# there are some in safety!
+
+#Safety - don't ignore anything within safety projects
+#NB - New safety projects must be named here when created
+!**/SafeLOGIC-1/**/*.*
+ACOPOStrak/Diagnosis/Config_Simu/5PC900_TS77_04/Logger.set

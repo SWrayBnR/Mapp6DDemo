@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_shuttleDialog" height="800" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="0" left="0" width="600" height="60" zIndex="0" value="Shuttle" textAlign="center" fontSize="45px" bold="true" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="1" x1="30" x2="570" y1="70" y2="70" lineWidth="3px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="120" left="60" width="180" zIndex="2" text="Start Pos X" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="180" left="60" width="180" zIndex="3" text="Start Pos Y" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="240" left="60" width="330" zIndex="4" text="Init Location" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="nextStationSelector" top="240" left="420" width="120" zIndex="5" dataProvider="[{'value':'0','text':'Workstation 1'},{'value':'1','text':'Workstation 2'},{'value':'2','text':'Workstation 3'},{'value':'3','text':'Workstation 4'},{'value':'4','text':'Workstation 5'},{'value':'5','text':'Workstation 6'},{'value':'6','text':'Workstation 7'},{'value':'7','text':'Workstation 8'},{'value':'8','text':'Workstation 9'},{'value':'9','text':'Workstation 10'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput_StartXPos" top="120" left="420" width="120" zIndex="6" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput_StartYPos" top="180" left="420" width="120" zIndex="7" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+  </Widgets>
+</Content>

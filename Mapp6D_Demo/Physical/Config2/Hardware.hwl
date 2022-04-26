@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config2.Hardware.hw" LastWriteTime="04/12/2022 12:49:07" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="8YFLM01.0000.00I-1" Type="8YFLM01.0000.00I-1" X="266" Y="50" />
+    <Module Name="5APC2100_BY44_000" Type="5APC2100.BY44-000" X="108" Y="100" />
+    <Module Name="5ACCLI01.SDL0-000" Type="5ACCLI01.SDL0-000" X="104" Y="139" />
+    <Module Name="5ACCIF01.FPLS-000" Type="5ACCIF01.FPLS-000" X="104" Y="110" />
+  </Modules>
+  <Links>
+    <Link From="5ACCIF01.FPLS-000" To="8YFLM01.0000.00I-1" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="145" Y="118" />
+      <Point X="145" Y="118" />
+      <Point X="150" Y="118" />
+      <Point X="300" Y="118" />
+      <Point X="300" Y="101" />
+      <Point X="300" Y="94" />
+      <Point X="300" Y="94" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>
